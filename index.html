@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<body>
+    <!-- Nav bar -->
+    <nav id="navbar">
+        <div class="topnav" id="myTopnav">
+            <a href="#welcome-section" class="active">Top</a>
+            <a href="#location">Location</a>
+            <a href="#email">Contact</a>
+            <div class="dropdown">
+              <button class="dropbtn">Projects
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#project1">Project 1</a>
+                <a href="#project2">Project 2</a>
+                <a href="#project3">Project 3</a>
+                <a href="#project4">Project 4</a>
+              </div>
+            </div>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </nav>
+    <!-- MAIN  -->
+    <div class="main" id="welcome-section">
+
+        <h1>I am William <span>Hall</span></h1>
+            <h3>
+                - A web developer -
+            </h3>
+        <hr>
+        
+        <h2>Projects</h2>
+            <h3> - Just a hand full of the many projects - </h3>
+        
+        <!-- Portfolio Gallery Grid -->
+        <section class="row" id="projects">
+          <div class="column">
+            <div class="content">
+              <a href="https://github.com/users/wbilly1012/projects/1"><img src="project1.jpg" alt="project1" style="width:100%"></a>
+              <h3 id="project1" class="project-tile">Tic Tac Toe</h3>
+              <p>The timeless game of Tic Tac Toe</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="project2.jpg" alt="project2" style="width:100%">
+              <h3 id="project2" class="project-tile">Project name 2</h3>
+              <p>Breif description of project 2</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="project3.jpg" alt="project3" style="width:100%">
+              <h3 id="project3" class="project-tile">Project name 3</h3>
+              <p>Breif description of project 3</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="project4.jpg" alt="project4" style="width:100%">
+              <h3 id="project4" class="project-tile">Project name 4</h3>
+              <p>Breif description of project 4</p>
+            </div>
+          </div>
+        </section>
+
+        <div id="about" class="content">
+          <img src="#me" alt="About" style="width:100%">
+          <h3>- A little about myself -</h3>
+          <p>Breif description of me</p>
+        </div>
+        <h2>Let's work together!</h2>
+            <h3> - How do you take your coffee? - </h3>
+
+        <!-- END MAIN -->
+        </div>
+    <footer class="footer-distributed">
+ 
+		<div class="footer-left">
+ 
+		<h3>William<span> Hall</span></h3>
+ 
+		<p class="footer-links">
+		<a href="#welcome-section">Top</a>
+	·       
+        <a href="#">Blog</a>
+	·       
+        <a href="#project1">Projects</a>
+	·           
+        <a href="#about">About</a>
+            <!--
+        <a href="#">Pricing</a> 
+            -->
+        </p>
+ 
+		<p class="footer-company-name">William Hall &copy; 2020</p>
+		</div>
+ 
+		<div class="footer-center">
+ 
+		<div>
+		<i id="location" class="fa fa-map-marker"></i>
+		<p><span>Address</span> Ogden, UT USA</p>
+		</div>
+ 
+		<div>
+		<i class="fa fa-phone"></i>
+		<p>+1 555 555 5555</p>
+		</div>
+ 
+		<div>
+		<i id="email" class="fa fa-envelope"></i>
+		<p><a href="mailto:billyskysarah@gmail.com">@mail.me</a></p>
+		</div>
+ 
+		</div>
+ 
+		<div class="footer-right">
+ 
+		<p class="footer-company-about">
+		<span>Social Media</span>
+	
+		</p>
+ 
+		<div class="footer-icons">
+ 
+		<a href="https://twitter.com/William_Billy_H" target="_blank"><i class="fa fa-twitter"></i></a>
+		<a href="https://www.linkedin.com/in/william-hall-92911199/" target="_blank"><i class="fa fa-linkedin"></i></a>
+		<a id="profile-link" href="https://github.com/wbilly1012" target="_blank"><i class="fa fa-github"></i></a>
+ 
+		</div>
+ 
+		</div>
+ 
+	</footer>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
+
+<!-- 
+    
+xxxxxUser Story #1: My portfolio should have a welcome section with an id of welcome-section.
+
+xxxxxUser Story #2: The welcome section should have an h1 element that contains text.
+
+xxxxxUser Story #3: My portfolio should have a projects section with an id of projects.
+
+xxxxxUser Story #4: The projects section should contain at least one element with a class of project-tile to hold a project.
+
+xxxxUser Story #5: The projects section should contain at least one link to a project.
+
+xxxxxUser Story #6: My portfolio should have a navbar with an id of navbar.
+
+xxxxUser Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page.
+
+xxxxxUser Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab.
+
+xxxxxUser Story #9: My portfolio should have at least one media query.
+
+User Story #10: The height of the welcome section should be equal to the height of the viewport.
+
+User Story #11: The navbar should always be at the top of the viewport.
+-->
